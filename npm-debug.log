@@ -1,30 +1,26 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'uninstall',
-1 verbose cli   '--global',
-1 verbose cli   'babel-cli' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'build' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 verbose lib/node_modules/babel-cli unbuild
-5 info preuninstall babel-cli@6.7.5
-6 info uninstall babel-cli@6.7.5
-7 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild babel-cli@6.7.5
-8 verbose /usr/local/bin,[object Object] binRoot
-9 info postuninstall babel-cli@6.7.5
-10 error Error: EACCES, unlink '/usr/local/lib/node_modules/babel-cli/.npmignore'
-10 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/babel-cli/.npmignore']
-10 error   errno: 3,
-10 error   code: 'EACCES',
-10 error   path: '/usr/local/lib/node_modules/babel-cli/.npmignore' }
-11 error Please try running this command again as root/Administrator.
-12 error System Darwin 15.4.0
-13 error command "node" "/usr/local/bin/npm" "uninstall" "--global" "babel-cli"
-14 error cwd /Users/maxmustang/workspace/javascript/babel
-15 error node -v v0.10.32
-16 error npm -v 1.4.28
-17 error path /usr/local/lib/node_modules/babel-cli/.npmignore
-18 error code EACCES
-19 error errno 3
-20 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/babel-cli/.npmignore'
-21 verbose exit [ 3, true ]
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info prebuild babel@1.0.0
+6 info build babel@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info babel@1.0.0 Failed to exec build script
+9 error babel@1.0.0 build: `babel src -d index.js`
+9 error Exit status 2
+10 error Failed at the babel@1.0.0 build script.
+10 error This is most likely a problem with the babel package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     babel src -d index.js
+10 error You can get their info via:
+10 error     npm owner ls babel
+10 error There is likely additional logging output above.
+11 error System Darwin 15.4.0
+12 error command "node" "/usr/local/bin/npm" "run" "build"
+13 error cwd /Users/maxmustang/workspace/javascript/babel
+14 error node -v v0.10.32
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
