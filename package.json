@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib",
-    "index": "babel-node src/arrowFunctions.js"
+    "index": "babel-node src/arrowFunctions.js",
+    "array.filter": "babel-node src/function_programming/array.filter.js",
+    "array.map" :   "babel-node src/function_programming/array.map.js"
   },
   "author": "",
   "license": "ISC",

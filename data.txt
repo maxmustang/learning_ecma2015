@@ -1,0 +1,4 @@
+max mattos  panqueca    10  1
+max mattos  salmao  20  2
+mae salmao  20  1
+pai pao 10    3

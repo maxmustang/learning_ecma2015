@@ -1,6 +1,3 @@
-import "babel-polyfill";
-// const square = n => n * n;
-
 let arrayx = [1,2,3,4,5,6]
 let total = arrayx.reduce((i) => {return i + n }, 0)
 
